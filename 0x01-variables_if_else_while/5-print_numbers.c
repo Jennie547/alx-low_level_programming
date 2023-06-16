@@ -1,13 +1,17 @@
 #include <stdio.h>
 /**
- * main - prints single base 10 nums from 0 to next line
+ * main - Entry point
+ * Description: return numbers of base 10
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int n;
+
 	for (n = 0; n < 10; n++)
+	{
 		printf("%d", n);
+	}
 	printf("\n");
 	return (0);
 }
