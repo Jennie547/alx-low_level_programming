@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-
 /**
  * main - returns both alphabets but not e and q
  *
