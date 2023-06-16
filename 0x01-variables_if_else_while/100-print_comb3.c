@@ -1,21 +1,25 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: return every two letter words 
+ *
+ * Description: prints every two possible combined digits
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int x, y;
-	for (x = 48; x <= 56; x++)
+	int y = '0';
+	int x = '0';
+
+	for (x = '0'; x <= 9; x++)
 	{
-		for (y = 49; y <= 57; y++)
+		for (y = '0'; y <= '9'; y++)
 		{
-			if (y > x)
+			if (!((y == x) || (x > y)))
 			{
 				putchar(x);
 				putchar(y);
-				if (x != 56 || y != 57)
+				if (!(y == '9' && x == '8'))
 				{
 					putchar(',');
 					putchar(' ');
@@ -23,6 +27,7 @@ int main(void)
 			}
 		}
 	}
+
 	putchar('\n');
 	return (0);
 }
