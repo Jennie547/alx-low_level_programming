@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - main function is to determine a random number as positive, negative or zero
+ * main - main function to determine a positive, negative number or zero
  *
  * Return: Always 0 (Success)
  *
