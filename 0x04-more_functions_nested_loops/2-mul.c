@@ -1,12 +1,13 @@
 #include "main.h"
+
 /**
- * mul - print the product of two digits
- * @a: the first num
- * @b: the second num
- * return: product of both
+ * mul - products of two integers
+ * @c: the first integer
+ * @d: the second integer
+ * Return: result multiplication of both integers
  */
 
-int mul(int a, int b)
+int mul(int c, int d)
 {
-	return (a * b);
+	return (c * d);
 }
