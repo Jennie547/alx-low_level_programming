@@ -2,32 +2,19 @@
 #include "main.h"
 
 /**
- * mai Entry point
+ * main - prints the highest prime factor of 612852475143
  * return: void
  */
 int main(void)
 {
-	long int x, y, z;
+	unsigned long int a, b = 612852475143;
 
-	x = 612852475143;
-	y = -1;
-
-	while (x % 2 == 0)
+	for (a = 3; a < 782849; a = a + 2)
 	{
-		y = 2;
-		x /= 2;
+		while ((b % a == 0) && (b != 1))
+			b = b / a;
 	}
-	for (z = 3; z <= sgrt(x); z = z + 2)
-	{
-		while (x % z == 0)
-		{
-			y = z;
-			x = x / z;
-		}
-	}
-	if (x > 2)
-		y = x;
 
-	printf("%ld\n", y);
+	printf("%lu\n", b);
 	return (0);
 }
