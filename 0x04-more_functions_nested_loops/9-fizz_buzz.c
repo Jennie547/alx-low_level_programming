@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - show the FizzBuzz programs
+ * main - print Fizz for multiples of 3, Buzz for those of 5, from 1 to 100
  * return: always 0
  */
 int main(void)
@@ -10,7 +10,7 @@ int main(void)
 
 	for (n = 1; n <= 100; n++)
 	{
-		if ((n % 3 == 0) && (n % 5 ==0))
+		if (n % 15 == 0)
 		{
 			printf("FizzBuzz");
 		}
@@ -18,7 +18,7 @@ int main(void)
 		{
 			printf("Fizz");
 		}
-		else if (n % 5 == 0);
+		else if (n % 5 == 0)
 		{
 			printf("Buzz");
 		}
@@ -26,10 +26,11 @@ int main(void)
 		{
 			printf("%d", n);
 		}
-		if ( n != 100)
+		if ( n < 100)
 		{
 			printf(" ");
 		}
 	}
 	printf("\n");
+	return (0);
 }
