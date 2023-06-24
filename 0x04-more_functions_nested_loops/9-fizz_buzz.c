@@ -1,9 +1,10 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 /**
- * main - print Fizz for multiples of 3, Buzz for those of 5, from 1 to 100
- * return: always 0
- */
+ * main - from 1 to 100 print Fizz for multiples of 3, Buzz for those of 5
+ * Return: Always 0 (success)
+ **/
+
 int main(void)
 {
 	int n;
@@ -24,7 +25,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d", n);
+			printf("Buzz");
 		}
 		if (n < 100)
 		{
