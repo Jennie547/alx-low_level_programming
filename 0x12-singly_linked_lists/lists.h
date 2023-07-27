@@ -6,8 +6,7 @@
  * @str: string - (malloc'ed string)
  * @len: string length
  * @next: the coming node
- * Description: singly linked list node structure
- * for Holberton project
+ * Description: singly linked list alx project
  */
 typedef struct list_s
 {
