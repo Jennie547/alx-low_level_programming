@@ -8,6 +8,10 @@
  * @c: char given
  * Return: pointer to array, NULL if fail
  */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7771c2765d824e373414f78765b2db4183c48fd6
 char *create_array(unsigned int size, char c)
 {
 	char *str;
