@@ -3,6 +3,7 @@
 /**
  * get_nodeint_at_index - the required function
  * @head: ptr
+ * @index: par
  *
  * Return: the value asked for
  */
