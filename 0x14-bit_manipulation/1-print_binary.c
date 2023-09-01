@@ -9,26 +9,24 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int my_val = 1, val_max = n;
+	int i = 63, my_val = 0;
+	unsigned long int un_int;
 
-	if (val_max == 0)
+	while (i >= 0)
 	{
-		_putchar('0');
-		return;
-	}
-	while (val_max > 0)
-	{
-		val_max = val_max >> 1;
-		my_val = my_val << 1;
-	}
-	my_val = my_val >> 1;
+		un_int = n >> i;
 
-	while (my_val > 0)
-	{
-		if (my_val & n)
+		if (un_int & 1)
+		{
 			_putchar('1');
-		else
+			my_val++;
+		}
+		else if (my_val)
 			_putchar('0');
-		my_val = my_val >> 1;
+
+		i--;
 	}
+
+	if (!my_val)
+		_putchar('0');
 }
