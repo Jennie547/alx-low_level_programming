@@ -9,8 +9,7 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int my_val = 1;
-	unsigned long int val_max = n;
+	unsigned long int my_val = 1, val_max = n;
 
 	if (val_max == 0)
 	{
